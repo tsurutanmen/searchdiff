@@ -19,7 +19,7 @@ Two questions come up with Search Console, and both are usually answered wrong.
 ## Install and get data
 
 ```
-pip install "git+https://github.com/tsurutanmen/searchdiff#egg=searchdiff[api]"
+pip install "searchdiff[api]"
 ```
 
 - From the UI: Performance > Export > the `Dates.csv` (site totals per day) or any CSV with

@@ -9,8 +9,8 @@ all mixed together. `searchdiff` gives the first question weekly blocks from a f
 second a control group and a difference in differences.
 
 ```
-pip install git+https://github.com/tsurutanmen/searchdiff                 # CSV only, no dependencies
-pip install "git+https://github.com/tsurutanmen/searchdiff#egg=searchdiff[api]"   # plus the API
+pip install searchdiff             # CSV only, no dependencies
+pip install "searchdiff[api]"      # plus the API
 ```
 
 ## Weekly blocks
