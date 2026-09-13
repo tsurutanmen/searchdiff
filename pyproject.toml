@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "searchdiff"
+version = "0.1.0"
+description = "Did the change work? Weekly blocks, cliffs, and difference-in-differences for Google Search Console data, from a CSV or the API."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Tsuruta Lab" }]
+keywords = ["search console", "seo", "difference in differences", "ctr", "analytics"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Internet :: WWW/HTTP :: Site Management",
+]
+dependencies = []
+
+[project.optional-dependencies]
+api = ["google-auth>=2.0", "requests>=2.25"]
+test = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://github.com/tsurutanmen/searchdiff"
+Issues = "https://github.com/tsurutanmen/searchdiff/issues"
+
+[project.scripts]
+searchdiff = "searchdiff.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["searchdiff*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
